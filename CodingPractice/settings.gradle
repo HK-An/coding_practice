@@ -1,4 +1,10 @@
 rootProject.name = 'CodingPractice'
 include 'programmers-lv2-string_compression'
 include 'programmers-lv2-coloring_book'
+include 'programmers-lv3-chuseok_traffic'
+include 'programmers-skillchk-lv1'
+include 'programmers-skillchk-lv2'
+include 'programmers-lv1-report_result'
+include 'programmers-lv1-lotto'
+include 'programmers-lv1-id_recommendation'
 

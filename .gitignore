@@ -25,3 +25,4 @@ hs_err_pid*
 /CodingPractice/.gradle
 /CodingPractice/.idea
 /CodingPractice/programmers-lv2-string_compression/build
+build/

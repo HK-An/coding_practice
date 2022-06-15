@@ -9,13 +9,34 @@ public class ConvertingGameTest {
     Solution s = new Solution();
 
     @Test
-    public void testIsNumber() throws Exception {
+    public void testIsNumberChar() throws Exception {
+        boolean answer1 = s.isNumber('3');
+        boolean answer2 = s.isNumber('q');
+
+        assertThat(answer1).isEqualTo(true);
+        assertThat(answer2).isEqualTo(false);
+    }
+
+    @Test
+    public void testIsNumberStr() throws Exception {
         String str = "nine";
         boolean answer1 = s.isNumber(str);
         boolean answer2 = s.isNumber("nin");
 
         assertThat(answer1).isEqualTo(true);
         assertThat(answer2).isEqualTo(false);
+    }
+
+    @Test
+    public void testConvertToNumFromString() throws Exception {
+        String str = "nine";
+        int expected = 9;
+
+        int answer1 = s.convertToNumFromString(str);
+        int answer2 = s.convertToNumFromString("nin");
+
+        assertThat(answer1).isEqualTo(expected);
+        assertThat(answer2).isEqualTo(-1);
     }
 
     @Test

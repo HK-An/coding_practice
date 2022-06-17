@@ -11,4 +11,6 @@ include 'programmers-lv1-year2016'
 include 'programmers-lv1-get_center_character'
 include 'programmers-lv1-converting_game'
 include 'programmers-lv1-pressing_keypad'
+include 'algorithm-dfs'
+include 'programmers-lv1-nth_number'
 

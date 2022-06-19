@@ -13,4 +13,5 @@ include 'programmers-lv1-converting_game'
 include 'programmers-lv1-pressing_keypad'
 include 'algorithm-dfs'
 include 'programmers-lv1-nth_number'
+include 'programmers-lv1-claw_crane_game'
 

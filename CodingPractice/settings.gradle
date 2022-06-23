@@ -23,4 +23,5 @@ include 'programmers-lv1-pocketmon'
 include 'programmers-lv1-trial_exam'
 include 'programmers-lv1-failure_rate'
 include 'programmers-lv1-divisors'
+include 'programmers-lv1-reverse_ternary'
 

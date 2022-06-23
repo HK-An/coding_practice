@@ -22,4 +22,5 @@ include 'programmers-lv1-pe_clothes'
 include 'programmers-lv1-pocketmon'
 include 'programmers-lv1-trial_exam'
 include 'programmers-lv1-failure_rate'
+include 'programmers-lv1-divisors'
 

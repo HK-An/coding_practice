@@ -29,4 +29,5 @@ include 'programmers-lv1-pick_and_sum'
 include 'programmers-lv1-namecard'
 include 'programmers-lv1-remain'
 include 'programmers-lv1-price_of_rides'
+include 'programmers-lv1-treasure_map'
 

@@ -42,4 +42,5 @@ include 'programmers-lv1-finding_kim'
 include 'programmers-lv1-find_prime_number'
 include 'math-isPrime'
 include 'programmers-lv1-reiterate'
+include 'programmers-lv1-parseInt'
 

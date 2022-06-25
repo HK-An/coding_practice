@@ -31,4 +31,5 @@ include 'programmers-lv1-remain'
 include 'programmers-lv1-price_of_rides'
 include 'programmers-lv1-treasure_map'
 include 'programmers-lv1-dart_game'
+include 'programmers-lv1-remove_duplicated'
 

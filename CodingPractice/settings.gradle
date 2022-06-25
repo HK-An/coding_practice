@@ -34,4 +34,5 @@ include 'programmers-lv1-dart_game'
 include 'programmers-lv1-remove_duplicated'
 include 'programmers-lv1-no_remains'
 include 'programmers-lv1-sum_of_two_numbers'
+include 'programmers-lv1-arrnaging_string'
 

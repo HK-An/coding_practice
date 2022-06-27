@@ -53,4 +53,5 @@ include 'programmers-lv1-judge_squart'
 include 'programmers-lv1-removing_smallest'
 include 'programmers-lv1-even_and_odd'
 include 'programmers-lv1-gcd_and_lcm'
+include 'programmers-lv1-collatz_conjecture'
 

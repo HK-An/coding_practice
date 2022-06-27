@@ -56,4 +56,5 @@ include 'programmers-lv1-gcd_and_lcm'
 include 'programmers-lv1-collatz_conjecture'
 include 'programmers-lv1-get_average'
 include 'programmers-lv1-harshad_number'
+include 'programmers-lv1-masking_number'
 

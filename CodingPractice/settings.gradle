@@ -21,4 +21,5 @@ include 'programmers-lv1-the_retired_participant'
 include 'programmers-lv1-pe_clothes'
 include 'programmers-lv1-pocketmon'
 include 'programmers-lv1-weird_string'
+include 'programmers-lv1-sum_of_digits'
 

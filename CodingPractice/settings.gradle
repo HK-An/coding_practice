@@ -51,4 +51,5 @@ include 'programmers-lv1-reversing_number'
 include 'programmers-lv1-int_order_by_desc'
 include 'programmers-lv1-judge_squart'
 include 'programmers-lv1-removing_smallest'
+include 'programmers-lv1-even_and_odd'
 

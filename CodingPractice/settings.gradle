@@ -49,4 +49,5 @@ include 'programmers-lv1-weird_string'
 include 'programmers-lv1-sum_of_digits'
 include 'programmers-lv1-reversing_number'
 include 'programmers-lv1-int_order_by_desc'
+include 'programmers-lv1-judge_squart'
 

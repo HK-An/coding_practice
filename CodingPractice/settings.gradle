@@ -1,6 +1,5 @@
 rootProject.name = 'CodingPractice'
 include 'programmers-lv2-string_compression'
-include 'programmers-lv2-coloring_book'
 include 'programmers-lv3-chuseok_traffic'
 include 'programmers-skillchk-lv1'
 include 'programmers-skillchk-lv2'
@@ -61,4 +60,5 @@ include 'programmers-lv1-sum_of_arrays'
 include 'programmers-lv1-gap_numbers'
 include 'programmers-lv1-stars'
 include 'algorithm'
+include 'programmers-lv2'
 

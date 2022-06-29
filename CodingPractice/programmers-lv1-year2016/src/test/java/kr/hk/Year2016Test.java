@@ -18,4 +18,15 @@ public class Year2016Test {
 
         assertThat(answer).isEqualTo(expected);
     }
+
+    @Test
+    public void case2() throws Exception {
+        int a = 5;
+        int b = 1;
+        String expected = "SUN";
+
+        String answer = s.solution(a, b);
+
+        assertThat(answer).isEqualTo(expected);
+    }
 }

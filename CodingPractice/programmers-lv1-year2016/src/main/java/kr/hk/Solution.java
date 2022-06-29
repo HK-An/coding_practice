@@ -3,53 +3,27 @@ package kr.hk;
 public class Solution {
     public String solution(int a, int b) {
         String answer = "";
-        //0일 1월 2화 3수 4목 5금 6토
-        int c = 4;
+        boolean is31Days = true;
+        int days = 5; // 2016.01.01.은 금요일
 
-        switch(a){
-            case 1:
-                c += b;
-                break;
-
-            case 2:
-                c = c + b  + 31;
-                break;
-
-            default:
-                c = calFirstDay(a) + b;
-                break;
+        for(int i = 1; i <= a; i++) {
+            if(i != a && is31Days) {
+                days += 31;
+                if(i != 7) is31Days = false;
+            } else if(i != a && is31Days == false) {
+                if(i == 2) days += 29;
+                else days += 30;
+                is31Days = true;
+            }
         }
-        answer = whatDay(c);
+        days += b - 1;
+        answer = getDay(days % 7);
 
         return answer;
     }
-    public int calFirstDay(int month){
-        int day = 1;
-
-        for(int i=4; i<=month; i++){
-            if(i <= 7){
-                if(i % 2 == 0) { // 30
-                    day = day + 3;
-                }else { // 31
-                    day = day + 2;
-                }
-            }else{
-                if(i == 8 ){
-                    day = day + 3;
-                }
-                else if(i % 2 == 0){
-                    day = day +2;
-                }else{
-                    day = day + 3;
-                }
-            }
-        }
-        return day;
-    }
-    public String whatDay(int date){
+    public String getDay(int date){
         //0일 1월 2화 3수 4목 5금 6토
-        int result = date % 7;
-        switch(result){
+        switch(date){
             case 0: return "SUN";
             case 1: return "MON";
             case 2: return "TUE";

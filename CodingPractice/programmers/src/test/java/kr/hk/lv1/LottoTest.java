@@ -1,4 +1,4 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import org.junit.Test;
 
@@ -6,9 +6,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class LottoTest {
 
-    // 문제를 먼저 풀고 나중에 저장한 코드라서 메소드별 테스트 없음
-
-    Solution s = new Solution();
+    Lotto lotto = new Lotto();
 
     @Test
     public void case1() throws Exception{
@@ -16,7 +14,7 @@ public class LottoTest {
         int[] win_nums = {31, 10, 45, 1, 6, 19};
         int[] expected = {3, 5};
 
-        int[] answer = s.solution(lottos, win_nums);
+        int[] answer = lotto.solution(lottos, win_nums);
 
         assertThat(answer).isEqualTo(expected);
     }
@@ -28,7 +26,7 @@ public class LottoTest {
 
 
         int[] expected = {1, 6};
-        int[] answer = s.solution(lottos, win_nums);
+        int[] answer = lotto.solution(lottos, win_nums);
 
         assertThat(answer).isEqualTo(expected);
     }
@@ -40,7 +38,7 @@ public class LottoTest {
 
 
         int[] expected = {1, 1};
-        int[] answer = s.solution(lottos, win_nums);
+        int[] answer = lotto.solution(lottos, win_nums);
 
         assertThat(answer).isEqualTo(expected);
     }

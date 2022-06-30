@@ -1,4 +1,4 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import org.junit.Test;
 
@@ -6,7 +6,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class Year2016Test {
 
-    Solution s = new Solution();
+    Year2016 year2016 = new Year2016();
 
     @Test
     public void case1() throws Exception {
@@ -14,7 +14,7 @@ public class Year2016Test {
         int b = 24;
         String expected = "TUE";
 
-        String answer = s.solution(a, b);
+        String answer = year2016.solution(a, b);
 
         assertThat(answer).isEqualTo(expected);
     }
@@ -25,7 +25,7 @@ public class Year2016Test {
         int b = 1;
         String expected = "SUN";
 
-        String answer = s.solution(a, b);
+        String answer = year2016.solution(a, b);
 
         assertThat(answer).isEqualTo(expected);
     }

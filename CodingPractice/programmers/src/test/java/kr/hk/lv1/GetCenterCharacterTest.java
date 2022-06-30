@@ -1,4 +1,4 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import org.junit.Test;
 
@@ -6,14 +6,14 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class GetCenterCharacterTest {
 
-    private Solution solution = new Solution();
+    private GetCenterCharacter centerCharacter = new GetCenterCharacter();
 
     @Test
     public void case1() throws Exception {
         String s = "abcde";
         String expected = "c";
 
-        String answer = solution.solution(s);
+        String answer = centerCharacter.solution(s);
 
         assertThat(answer).isEqualTo(expected);
     }
@@ -23,7 +23,7 @@ public class GetCenterCharacterTest {
         String s = "qwer";
         String expected = "we";
 
-        String answer = solution.solution(s);
+        String answer = centerCharacter.solution(s);
 
         assertThat(answer).isEqualTo(expected);
     }

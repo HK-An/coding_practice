@@ -1,4 +1,4 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import org.junit.Test;
 
@@ -6,12 +6,12 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class ConvertingGameTest {
 
-    Solution s = new Solution();
+    ConvertingGame convertingGame = new ConvertingGame();
 
     @Test
     public void testIsNumberChar() throws Exception {
-        boolean answer1 = s.isNumber('3');
-        boolean answer2 = s.isNumber('q');
+        boolean answer1 = convertingGame.isNumber('3');
+        boolean answer2 = convertingGame.isNumber('q');
 
         assertThat(answer1).isEqualTo(true);
         assertThat(answer2).isEqualTo(false);
@@ -20,8 +20,8 @@ public class ConvertingGameTest {
     @Test
     public void testIsNumberStr() throws Exception {
         String str = "nine";
-        boolean answer1 = s.isNumber(str);
-        boolean answer2 = s.isNumber("nin");
+        boolean answer1 = convertingGame.isNumber(str);
+        boolean answer2 = convertingGame.isNumber("nin");
 
         assertThat(answer1).isEqualTo(true);
         assertThat(answer2).isEqualTo(false);
@@ -32,8 +32,8 @@ public class ConvertingGameTest {
         String str = "nine";
         int expected = 9;
 
-        int answer1 = s.convertToNumFromString(str);
-        int answer2 = s.convertToNumFromString("nin");
+        int answer1 = convertingGame.convertToNumFromString(str);
+        int answer2 = convertingGame.convertToNumFromString("nin");
 
         assertThat(answer1).isEqualTo(expected);
         assertThat(answer2).isEqualTo(-1);
@@ -44,7 +44,7 @@ public class ConvertingGameTest {
         String str = "one4seveneight";
         int expected = 1478;
 
-        int answer = s.solution(str);
+        int answer = convertingGame.solution(str);
 
         assertThat(answer).isEqualTo(expected);
     }
@@ -54,7 +54,7 @@ public class ConvertingGameTest {
         String str = "23four5six7";
         int expected = 234567;
 
-        int answer = s.solution(str);
+        int answer = convertingGame.solution(str);
 
         assertThat(answer).isEqualTo(expected);
     }
@@ -64,7 +64,7 @@ public class ConvertingGameTest {
         String str = "2three45sixseven";
         int expected = 234567;
 
-        int answer = s.solution(str);
+        int answer = convertingGame.solution(str);
 
         assertThat(answer).isEqualTo(expected);
     }
@@ -74,7 +74,7 @@ public class ConvertingGameTest {
         String str = "123";
         int expected = 123;
 
-        int answer = s.solution(str);
+        int answer = convertingGame.solution(str);
 
         assertThat(answer).isEqualTo(expected);
     }

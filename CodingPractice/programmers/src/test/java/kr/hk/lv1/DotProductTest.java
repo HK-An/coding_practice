@@ -1,11 +1,12 @@
-import kr.hk.QuestionTwo;
+package kr.hk.lv1;
+
 import org.junit.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class QuestionTwoTest {
+public class DotProductTest {
 
-    private QuestionTwo q2 = new QuestionTwo();
+    private DotProduct dotProduct = new DotProduct();
 
     @Test
     public void case1()  throws Exception{
@@ -14,7 +15,7 @@ public class QuestionTwoTest {
         int[] b = {-3,-1,0,2};
 
         // when
-        int answer = q2.solution(a,b);
+        int answer = dotProduct.solution(a,b);
 
         // then
 
@@ -28,7 +29,7 @@ public class QuestionTwoTest {
         int[] b = {1,0,-1};
 
         // when
-        int answer = q2.solution(a,b);
+        int answer = dotProduct.solution(a,b);
 
         // then
 

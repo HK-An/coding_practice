@@ -8,11 +8,11 @@ public class PressingKeypad {
         StringBuilder stb = new StringBuilder();
 
         for(int number : numbers) {
-            if(number == 1 || number == 4 || number == 7) {
+            if(number % 3 == 1) {
                 stb.append("L");
                 leftHand.setPosition(number);
             }
-            else if(number == 3 || number == 6 || number == 9) {
+            else if(number != 0 && (number % 3 == 0)) {
                 stb.append("R");
                 rightHand.setPosition(number);
             }

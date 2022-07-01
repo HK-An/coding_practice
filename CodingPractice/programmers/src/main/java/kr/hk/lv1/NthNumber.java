@@ -1,10 +1,11 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Solution {
+public class NthNumber {
+
     public int[] solution(int[] array, int[][] commands) {
         List<Integer> answerList = new ArrayList<Integer>();
         for(int[] command : commands) {

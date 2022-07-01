@@ -1,15 +1,13 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class NthNumberTest {
-    private Solution s = new Solution();
+    private NthNumber nthNumber = new NthNumber();
     private int[] array = {1, 5, 2, 6, 3, 7, 4};
 
     @Test
@@ -33,9 +31,9 @@ public class NthNumberTest {
         int[] expected2 = {6};
         int[] expected3 = array;
 
-        int[] answer1 = s.splitArray(array, start1 - 1, end1 - 1);
-        int[] answer2 = s.splitArray(array, start2 - 1, end2 - 1);
-        int[] answer3 = s.splitArray(array, start3 - 1, end3 - 1);
+        int[] answer1 = nthNumber.splitArray(array, start1 - 1, end1 - 1);
+        int[] answer2 = nthNumber.splitArray(array, start2 - 1, end2 - 1);
+        int[] answer3 = nthNumber.splitArray(array, start3 - 1, end3 - 1);
 
         assertThat(answer1).isEqualTo(expected1);
         assertThat(answer2).isEqualTo(expected2);
@@ -47,7 +45,7 @@ public class NthNumberTest {
         int[][] commands = {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
         int[] expected = {5, 6, 3};
 
-        int[] answer = s.solution(array, commands);
+        int[] answer = nthNumber.solution(array, commands);
 
         assertThat(answer).isEqualTo(expected);
     }

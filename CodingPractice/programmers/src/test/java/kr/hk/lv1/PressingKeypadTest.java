@@ -1,4 +1,4 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import org.junit.Test;
 
@@ -6,7 +6,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class PressingKeypadTest {
 
-    Solution s = new Solution();
+    PressingKeypad pressingKeypad = new PressingKeypad();
     @Test
     public void testCalculateDistance() throws Exception {
         Hand rightHand3 = new Hand(3, "right");
@@ -16,12 +16,12 @@ public class PressingKeypadTest {
 
         Hand leftHandOrigin = new Hand(10, "left");
 
-        int answer1 = s.calculateDistance(rightHand3, 2);
-        int answer2 = s.calculateDistance(rightHand5, 2);
-        int answer3 = s.calculateDistance(rightHand7, 2);
-        int answer4 = s.calculateDistance(rightHandOrigin, 0);
+        int answer1 = pressingKeypad.calculateDistance(rightHand3, 2);
+        int answer2 = pressingKeypad.calculateDistance(rightHand5, 2);
+        int answer3 = pressingKeypad.calculateDistance(rightHand7, 2);
+        int answer4 = pressingKeypad.calculateDistance(rightHandOrigin, 0);
 
-        int answerLeft1 = s.calculateDistance(leftHandOrigin, 0);
+        int answerLeft1 = pressingKeypad.calculateDistance(leftHandOrigin, 0);
 
 
         assertThat(answer1).isEqualTo(1);
@@ -38,7 +38,7 @@ public class PressingKeypadTest {
         String hand = "right";
         String expected = "LRLLLRLLRRL";
 
-        String answer = s.solution(numbers, hand);
+        String answer = pressingKeypad.solution(numbers, hand);
 
         assertThat(answer).isEqualTo(expected);
     }
@@ -49,7 +49,7 @@ public class PressingKeypadTest {
         String hand = "left";
         String expected = "LRLLRRLLLRR";
 
-        String answer = s.solution(numbers, hand);
+        String answer = pressingKeypad.solution(numbers, hand);
 
         assertThat(answer).isEqualTo(expected);
     }
@@ -60,7 +60,7 @@ public class PressingKeypadTest {
         String hand = "right";
         String expected = "LLRLLRLLRL";
 
-        String answer = s.solution(numbers, hand);
+        String answer = pressingKeypad.solution(numbers, hand);
 
         assertThat(answer).isEqualTo(expected);
     }

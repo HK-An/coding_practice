@@ -1,6 +1,6 @@
-package kr.hk;
+package kr.hk.lv1;
 
-public class Solution {
+public class PressingKeypad {
     private Hand leftHand = new Hand(10, "left");
     private Hand rightHand = new Hand(12, "right");
 
@@ -87,3 +87,4 @@ class Hand {
         return rightOrLeftStr;
     }
 }
+

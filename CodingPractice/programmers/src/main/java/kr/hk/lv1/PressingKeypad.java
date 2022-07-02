@@ -1,6 +1,6 @@
-package kr.hk;
+package kr.hk.lv1;
 
-public class Solution {
+public class PressingKeypad {
     private Hand leftHand = new Hand(10, "left");
     private Hand rightHand = new Hand(12, "right");
 
@@ -8,11 +8,11 @@ public class Solution {
         StringBuilder stb = new StringBuilder();
 
         for(int number : numbers) {
-            if(number == 1 || number == 4 || number == 7) {
+            if(number % 3 == 1) {
                 stb.append("L");
                 leftHand.setPosition(number);
             }
-            else if(number == 3 || number == 6 || number == 9) {
+            else if(number != 0 && (number % 3 == 0)) {
                 stb.append("R");
                 rightHand.setPosition(number);
             }
@@ -87,3 +87,4 @@ class Hand {
         return rightOrLeftStr;
     }
 }
+

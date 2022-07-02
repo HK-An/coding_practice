@@ -1,6 +1,6 @@
-package kr.hk;
+package kr.hk.lv1;
 
-public class QuestionTwo {
+public class DotProduct {
     public int solution(int[] a, int[] b) {
         int size = a.length;
         int sum = 0;

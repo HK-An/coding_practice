@@ -4,10 +4,7 @@ include 'programmers-lv3-chuseok_traffic'
 include 'programmers-skillchk-lv1'
 include 'programmers-skillchk-lv2'
 include 'algorithm-dfs'
-<<<<<<< HEAD
-=======
 include 'programmers-lv1-claw_crane_game'
->>>>>>> main
 include 'programmers-lv1-sum_of_abscence_number'
 include 'programmers-lv1-positive_and_negative'
 include 'programmers-lv1-making_prime_number'

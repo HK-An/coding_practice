@@ -1,4 +1,4 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import org.junit.Test;
 
@@ -10,11 +10,11 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class ClawCraneGameTest {
     private int[][] board = {{0,0,0,0,0},{0,0,1,0,3},{0,2,5,0,1},{4,2,4,4,2},{3,5,1,3,1}};
     private int[] moves = {1,5,3,5,1,2,1,4};
-    private Solution s = new Solution();
+    private ClawCraneGame clawCraneGame = new ClawCraneGame();
 
     @Test
     public void testGetDolls() throws Exception {
-        List<Integer> stacks = s.getDolls(board, moves);
+        List<Integer> stacks = clawCraneGame.getDolls(board, moves);
         List<Integer> expected = new ArrayList<Integer>();
         expected.add(4);
         expected.add(3);
@@ -29,7 +29,7 @@ public class ClawCraneGameTest {
 
     @Test
     public void case1() {
-        int answer = s.solution(board, moves);
+        int answer = clawCraneGame.solution(board, moves);
         int expected = 4;
 
         assertThat(answer).isEqualTo(expected);

@@ -1,4 +1,4 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class SumOfAbscenceNumberTest {
 
-    private Solution solution = new Solution();
+    private SumOfAbsenceNumber soan = new SumOfAbsenceNumber();
     private int[] numbers1 = {1,2,3,4,6,7,8,0};
     private int[] numbers2 = {5,8,4,0,6,7,9};
 
@@ -27,8 +27,8 @@ public class SumOfAbscenceNumberTest {
         List<Integer> numberList1 = Arrays.stream(numbers1).boxed().collect(Collectors.toList());
         List<Integer> numberList2 = Arrays.stream(numbers2).boxed().collect(Collectors.toList());
 
-        List<Integer> answer1 = solution.getAbsenceNumberList(numberList1);
-        List<Integer> answer2 = solution.getAbsenceNumberList(numberList2);
+        List<Integer> answer1 = soan.getAbsenceNumberList(numberList1);
+        List<Integer> answer2 = soan.getAbsenceNumberList(numberList2);
 
         assertThat(answer1).isEqualTo(expected1);
         assertThat(answer2).isEqualTo(expected2);
@@ -38,7 +38,7 @@ public class SumOfAbscenceNumberTest {
     @Test
     public void case1() {
         int expected = 14;
-        int answer = solution.solution(numbers1);
+        int answer = soan.solution(numbers1);
 
         assertThat(answer).isEqualTo(expected);
     }
@@ -46,7 +46,7 @@ public class SumOfAbscenceNumberTest {
     @Test
     public void case2() {
         int expected = 6;
-        int answer = solution.solution(numbers2);
+        int answer = soan.solution(numbers2);
 
         assertThat(answer).isEqualTo(expected);
     }

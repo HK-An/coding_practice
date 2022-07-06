@@ -1,15 +1,11 @@
 package kr.hk.lv1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class SumOfAbsenceNumber {
     public int solution(int[] numbers) {
-        List<Integer> numberList = Arrays.stream(numbers).boxed().collect(Collectors.toList());
-        List<Integer> absenceNumberList = getAbsenceNumberList(numberList);
-
+        List<Integer> absenceNumberList = getAbsenceNumberList(numbers);
 
         int answer = 0;
         for(int absenceNumber : absenceNumberList) {
@@ -18,12 +14,17 @@ public class SumOfAbsenceNumber {
         return answer;
     }
 
-    List<Integer> getAbsenceNumberList(List<Integer> numberList) {
-        List<Integer> criteriaNumberList = Arrays.stream(new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}).boxed().collect(Collectors.toList());
+    List<Integer> getAbsenceNumberList(int[] numbers) {
+        int[] basicNumbers = {0,1,2,3,4,5,6,7,8,9};
         List<Integer> absenceNumberList = new ArrayList<Integer>();
 
-        for(int criteria : criteriaNumberList) {
-            if(numberList.contains(criteria) == false) absenceNumberList.add(criteria);
+        for(int criteria : basicNumbers) {
+            for(int i = 0; i < numbers.length; i++) {
+                int number = numbers[i];
+
+                if(number == criteria) break;
+                if(i == numbers.length - 1) absenceNumberList.add(criteria);
+            }
         }
         return absenceNumberList;
     }

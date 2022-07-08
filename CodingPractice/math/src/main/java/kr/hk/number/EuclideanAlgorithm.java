@@ -8,14 +8,13 @@ public class EuclideanAlgorithm {
         int gcd = -1;
 
         while(true) {
-            int quotient = num1 / num2;
             int remainder = num1 % num2;
             if(remainder == 0) {
                 gcd = num2;
                 break;
             }
 
-            num1 = quotient;
+            num1 = num2;
             num2 = remainder;
         }
 

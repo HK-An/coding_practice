@@ -1,4 +1,4 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import org.junit.Test;
 
@@ -7,7 +7,7 @@ import java.util.Arrays;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class PocketmonTest {
-    private Solution s = new Solution();
+    private PocketMon s = new PocketMon();
 
     @Test
     public void testGetMax() {

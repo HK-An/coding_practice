@@ -1,11 +1,12 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import org.junit.Test;
+
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class FailureRateTest {
 
-    private Solution s = new Solution();
+    private FailureRate s = new FailureRate();
 
     @Test
     public void case1() {

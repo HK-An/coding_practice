@@ -1,4 +1,4 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import org.junit.Test;
 
@@ -6,7 +6,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class TrialExamTest {
 
-    private Solution s = new Solution();
+    private TrialExam s = new TrialExam();
 
     @Test
     public void case1() {

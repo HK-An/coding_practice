@@ -1,6 +1,6 @@
-package kr.hk;
+package kr.hk.lv1;
 
-public class Solution {
+public class ReversingTernary {
     public int solution(int n) {
         int biggestPlaceValue = getBiggestPlaceValue(n);
         String ternary = getTernary(biggestPlaceValue, n).toString();

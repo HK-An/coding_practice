@@ -1,6 +1,6 @@
-package kr.hk;
+package kr.hk.lv1;
 
-public class Solution {
+public class Divisors {
     public int solution(int left, int right) {
         int answer = 0;
 

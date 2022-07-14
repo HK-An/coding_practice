@@ -1,4 +1,4 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import org.junit.Test;
 
@@ -6,7 +6,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class BudgetTest {
 
-    private Solution s = new Solution();
+    private Budget s = new Budget();
 
     @Test
     public void case1() {

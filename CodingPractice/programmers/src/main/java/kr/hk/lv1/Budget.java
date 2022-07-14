@@ -1,8 +1,8 @@
-package kr.hk;
+package kr.hk.lv1;
 
 import java.util.Arrays;
 
-public class Solution {
+public class Budget {
 
     public int solution(int[] d, int budget) {
         int answer = 0;

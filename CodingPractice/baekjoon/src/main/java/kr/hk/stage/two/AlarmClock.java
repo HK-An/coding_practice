@@ -1,10 +1,12 @@
 package kr.hk.stage.two;
 
-import kr.hk.stage.kr.hk.Common;
 
-public class AlarmClock extends Common {
+import java.util.Scanner;
+
+public class AlarmClock  {
 
     public void solution() {
+        Scanner sc= new Scanner(System.in);
         int h = sc.nextInt();
         int m = sc.nextInt();
 

@@ -1,9 +1,8 @@
 package kr.hk.algorithm.dfs;
 
-import kr.hk.stage.kr.hk.Common;
 import java.io.IOException;
 
-public class Virus extends Common {
+public class Virus  {
 
     boolean[] visited;
     boolean[][] fromTo;

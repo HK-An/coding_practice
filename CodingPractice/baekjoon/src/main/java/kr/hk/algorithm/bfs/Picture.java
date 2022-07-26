@@ -17,6 +17,8 @@ public class Picture {
         //String[] sizes = br.readLine().split(" ");
         height = Integer.parseInt(st.nextToken());
         width = Integer.parseInt(st.nextToken());
+        StringBuilder sb = new StringBuilder();
+
 
         panel = new int[height][width];
         visited = new boolean[height][width];

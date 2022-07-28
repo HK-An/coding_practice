@@ -8,7 +8,7 @@ public class P8xxxIntegratedTest {
 
     @Test
     public void test_8958() {
-        Eight958 s = new Eight958();
+        P8958 s = new P8958();
         String[] args = {"5", "OOXXOXXOOO", "OOXXOOXXOO", "OXOXOXOXOXOXOX", "OOOOOOOOOO", "OOOOXOOOOXOOOOX"};
 
         String expected = "10\n" +
@@ -25,7 +25,7 @@ public class P8xxxIntegratedTest {
 
     @Test
     public void test_8958_1() {
-        Eight958 s = new Eight958();
+        P8958 s = new P8958();
         String[] args = {"1", "OXOXOXOXO"};
 
         String expected = "5";

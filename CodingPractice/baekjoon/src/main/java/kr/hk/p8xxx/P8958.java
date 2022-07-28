@@ -2,7 +2,7 @@ package kr.hk.p8xxx;
 
 import java.util.Scanner;
 
-public class Eight958 {
+public class P8958 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int total;

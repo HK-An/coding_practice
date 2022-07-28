@@ -2,7 +2,7 @@ package kr.hk.p15xxx;
 
 import java.util.Scanner;
 
-public class P11552 {
+public class P15552 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int times = sc.nextInt();

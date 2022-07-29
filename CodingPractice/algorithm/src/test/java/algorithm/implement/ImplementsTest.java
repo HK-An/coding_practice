@@ -69,4 +69,31 @@ public class ImplementsTest {
 
         assertThat(answer).isEqualTo(expected);
     }
+
+
+    @Test
+    public void test_prim_1() {
+        Prim p = new Prim();
+
+        int[][] graph = {{1, 2, 1}, {2, 3, 2}, {1, 3, 3}};
+        int vertexes = 3;
+        int expected = 3;
+
+        int answer = p.getTotalWeight(graph, vertexes);
+
+        assertThat(answer).isEqualTo(expected);
+    }
+
+    @Test
+    public void test_prim_2() {
+        Prim p = new Prim();
+
+        int[][] graph = {{1,2,29},{1,6,10},{2,3,16},{2,7,15},{3,4,12},{4,5,22},{4,7,18}, {5, 7, 25},{5,6,27}};
+        int vertexes = 7;
+        int expected = 102;
+
+        int answer = p.getTotalWeight(graph, vertexes);
+
+        assertThat(answer).isEqualTo(expected);
+    }
 }

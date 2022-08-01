@@ -1,7 +1,6 @@
-package kr.hk.number;
+package algorithm.math.number;
 
 public class EuclideanAlgorithm {
-
     public int getGcd(int a, int b) {
         int num1 = Math.max(a, b);
         int num2 = Math.min(a, b);

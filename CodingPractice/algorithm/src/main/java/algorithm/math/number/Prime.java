@@ -1,8 +1,25 @@
+package algorithm.math.number;
+
 import java.util.Arrays;
 
 public class Prime {
 
-    public boolean isPrime(int number) {
+    public boolean givenNumberIsPrimeWithWillsonsLaw(int number) {
+        return (factorial(number-1) + 1) % number == 0;
+    }
+
+    private long factorial(int n) {
+        int result = 1;
+
+        for(int i = n; i >= 1; i--) {
+            result *= i;
+        }
+
+        return result;
+    }
+
+
+    public boolean givenNumberIsPrimeWithSieve(int number) {
         boolean result = true;
 
         for(int i = 2; i <= Math.sqrt(number); i++) {
